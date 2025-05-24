@@ -1,5 +1,5 @@
 
-import Styles from '../../styles/pages/SocialMedia/socialmedia.module.scss';
+import Styles from "../../styles/pages/socialmedia/socialmedia.module.scss"
 import {Images} from '../../assets/images/index'
 
 const SocialMedia = () => {
