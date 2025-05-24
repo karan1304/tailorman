@@ -31,7 +31,7 @@ import SCF from "./scf.png"
 import SCI from "./sci.png"
 import SCT from "./sct.png"
 import SCY from "./scy.png"
-import ToggleOff from "./toggleoff.png";
+import ToggleOff from "./Cancel.png";
 import ToggleOn from "./toggleon.png";
 import AboutMainImage from './about-main-image.png';
 import CEO from './ceo.jpg'
