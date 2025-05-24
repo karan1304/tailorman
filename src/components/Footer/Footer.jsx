@@ -1,4 +1,3 @@
-import React from 'react'
 import {Images} from '../../assets/images/index'
 import styles from './../../styles/components/Footer/footer.module.scss'
 
@@ -29,7 +28,7 @@ const Footer = () => {
         <div className={styles.col3}>
             <h1 className={styles.listHeading}>Information</h1>
             <ul>
-                <li><a href="#" className={styles.link}>About us</a></li>
+                <li><a href="/about" className={styles.link}>About us</a></li>
                 <li><a href="#" className={styles.link}>Career</a></li>
                 <li><a href="#" className={styles.link}>Terms & Conditions</a></li>
                 <li><a href="#" className={styles.link}>Privacy Policy</a></li>
@@ -41,7 +40,7 @@ const Footer = () => {
         <div className={styles.col4}>
             <h1 className={styles.listHeading}>Customer Services</h1>
             <ul>
-                <li><a href="#" className={styles.link}>Contact us</a></li>
+                <li><a href="/contact-us" className={styles.link}>Contact us</a></li>
                 <li><a href="#" className={styles.link}>Track order</a></li>
                 <li><a href="#" className={styles.link}>Return order</a></li>
                 <li><a href="#" className={styles.link}>Shipping policy</a></li>

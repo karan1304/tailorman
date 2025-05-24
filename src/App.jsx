@@ -1,30 +1,41 @@
-import { useState } from 'react'
-import './App.css'
-import Topbar from './components/Topbar/Topbar'
-import Hero from './components/Hero/Hero'
-import Card from './components/Card/Card'
-import BestSeller from './components/BestSeller/BestSeller'
-import NewArrivals from './components/NewArrivals/NewArrivals'
-import Video from './components/Video/Video'
-import ShopByOccasion from './components/ShopByOccasion/ShopByOccasion'
-import Newsletter from './components/Newsletter/Newsletter'
-import Instashop from './components/InstaShop/Instashop'
-import Footer from './components/Footer/Footer'
+// import './App.css'
+import Footer from './components/Footer/Footer';
+import Topbar from './components/Topbar/Topbar';
+import About from './pages/About/About';
+import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import NewArrivals from './pages/NewArrivals/NewArrivals';
+import SocialMedia from './pages/SocialMedia/SocialMedia';
+import Login from './pages/Login/Login'
+import Signup from './pages/signup/Signup';
+import Cart from './pages/Cart/Cart';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// import NewArrivals from './pages/NewArrivals/NewArrivals';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <>
-   <Topbar/>
-   <Hero/>
-   <BestSeller/>
-   <NewArrivals/>
-   <Video/>
-   <ShopByOccasion/>
-   <Instashop/>
-   <Newsletter/>
-   <Footer/>  
+   <BrowserRouter>
+    <Topbar/>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact-us" element={<Contact/>}/>
+      <Route path="/new-arrivals" element={<NewArrivals/>}/>
+      <Route path="/social-media" element={<SocialMedia/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/sign-up" element={<Signup/>}/>
+      <Route path="/cart" element={<Cart/>}/>
+    </Routes>
+    <Footer/>
+  </BrowserRouter>
    </>
   )
 }

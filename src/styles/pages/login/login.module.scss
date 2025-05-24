@@ -1,0 +1,159 @@
+.login
+{
+ width: 100%;
+ padding:50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ .loginForm
+ {
+  border:1px solid #1E3D59;
+  box-shadow: 0px 2px 2px #1E3D59;
+  margin:20px auto;
+  padding:40px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+
+  .formHeading
+  {
+   width: 100%;
+   text-align: center;
+   font-size: 36px;
+   font-weight: 500;
+  }
+
+  .name
+  {
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+
+   .label
+   {
+    color:#333333;
+    font-size: 18px;
+   }
+   
+   .nameInput
+   {
+    height: 50px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding:10px;
+   }
+  }
+
+  // .confPassword
+  // {
+  //  display: flex;
+  //  flex-direction: column;
+  //  gap:5px;
+
+  //  .label
+  //  {
+  //   color:#333333;
+  //   font-size: 18px;
+  //  }
+   
+  //  .confirmPasswordInput
+  //  {
+  //   height: 50px;
+  //   border:1px solid #cccccc;
+  //   border-radius: 5px;
+  //   padding:10px;
+  //  }
+  // }
+
+  .first ,.second
+  {
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+
+   .label
+   {
+    color:#333333;
+    font-size: 18px;
+   }
+   
+   .emailInput , .passwordInput
+   {
+    height: 50px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding:10px;
+   }
+  }
+
+  .third
+  {
+   display: flex;
+   gap:5px;
+
+   .showPassword
+   {
+    color:#333333;
+    font-size:15px;
+   }
+  }
+
+  .signIn
+  {
+   padding:10px 0;
+   background-color: #1E3D59;
+   color:#ffffff;
+   font-weight: 600;
+  }
+
+  .forgotPassword
+  {
+   text-align: center;
+  }
+
+  .forgotPassword > strong
+  {
+   color:#1E3D59;
+  }
+
+  .donthaveAccount
+  {
+   text-align: center;
+  }
+
+  .donthaveAccount > strong
+  {
+   color:#1E3D59;
+  }
+
+
+  .haveAccount
+  {
+   text-align: center;
+  }
+
+  .haveAccount > strong
+  {
+   color:#1E3D59;
+  }
+
+
+  
+
+
+ }
+
+ @media screen and (max-width:450px) {
+   .loginForm{
+    margin:30px auto;
+    padding:30px;
+   }
+   .login
+   {
+    padding:30px;
+   }
+ }
+
+}

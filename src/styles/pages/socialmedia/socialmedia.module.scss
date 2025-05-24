@@ -1,0 +1,265 @@
+.socialMediaPage{
+ width: 100%;
+ height: 100%;
+
+  .bannerContainer
+  {
+   width: 100%;
+   height: 600px;
+   .bannerImage
+   {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+  }
+
+  // .ImagesContainer1
+  // {
+  //  width: 95%;
+  //  margin : 40px auto;
+  //  display: flex;
+  //  gap:40px;
+
+  //  .left
+  //  {
+  //   img
+  //   {
+  //    width: 100%;
+  //    height: 100%;
+  //   }
+  //  }
+  //  .right
+  //  {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap:40px;
+  //   img
+  //   {
+  //    width: 100%;
+  //    height: 100%;
+  //   }
+  //  }
+  // }
+
+  .ImagesContainer1 {
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+  
+    .left {
+      width: 60%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .right {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .left,
+      .right {
+        width: 100%;
+      }
+  
+      .right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+  
+        img {
+          width: 48%;
+          height: auto;
+        }
+      }
+  
+      .left {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .right {
+        flex-direction: column;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  } 
+
+  // .ImagesContainer2
+  // {
+  //  width: 95%;
+  //  margin : 40px auto;
+  //  display: flex;
+  //  gap:40px;
+  //  .right
+  //  {
+  //   width: 70%;
+  //   img
+  //   {
+  //    width: 100%;
+  //    height: 100%;
+  //   }
+  //  }
+  //  .left
+  //  {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap:40px;
+  //   img
+  //   {
+  //    width: 100%;
+  //    height: 100%;
+  //   }
+  //  }
+  // }
+
+  .ImagesContainer2 {
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+  
+    .right {
+      width: 70%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .left, .right {
+        width: 100%;
+      }
+  
+      .left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+  
+        img {
+          width: 48%;
+          height: auto;
+        }
+      }
+  
+      .right {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .left {
+        flex-direction: column;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+
+  .ImagesContainer3 {
+   width: 95%;
+   margin: 40px auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 40px;
+ 
+   .first, .second, .third, .fourth {
+     width: 100%;
+     img {
+       width: 100%;
+
+       height: 100%;
+       display: block;
+       object-fit: cover;
+     }
+   }
+ }
+
+ .socialMedia{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:30px;
+  padding:70px 0;
+  background-color: #1E3D59;
+  border-bottom: 2px solid white;
+  .socialMediaPlatform
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    padding:20px;
+    // border-radius: 5px;
+    // border:1px solid #cccccc;
+    // box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+
+    .socialMediaPlatformIcon
+    {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+
+    .handlingName
+    {
+      color:#cccccc;
+      filter: drop-shadow(1px 1px 0px black)
+    }
+  }
+
+ }  
+
+}

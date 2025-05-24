@@ -1,7 +1,5 @@
-import React from 'react'
 import styles from './../../styles/components/Hero/hero.module.scss'
 import {Images} from '../../assets/images/index'
-import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (

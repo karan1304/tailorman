@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {Images} from '../../assets/images/index'
 import styles from './../../styles/components/BestSeller/bestSeller.module.scss'
 import Card from '../Card/Card';

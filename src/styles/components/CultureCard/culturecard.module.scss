@@ -1,0 +1,43 @@
+.CultureCard
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    width:350px;
+    height: 350px;
+    padding:40px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(30, 61, 89, 0.7);
+    // background-color: #1E3D59;
+    
+    .cardImage
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px rgba(256, 256, 256, 1);
+    }
+    .cardDiscription
+    {
+        text-align: center;
+        width:85%;
+        // color:white;
+    }
+    .button
+    {
+        padding:10px 20px;
+        color:#1e3d59;
+        font-weight: bold;
+        border:3px solid #1E3D59;
+        // background-color: white;
+        border-radius:5px;
+        &:hover
+        {
+            background-color: #1E3D59;
+            color:white;
+        }
+    }
+}

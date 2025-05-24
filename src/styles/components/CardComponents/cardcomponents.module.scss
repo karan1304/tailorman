@@ -1,0 +1,26 @@
+.buttonWithBorder
+{
+ width: 120px;
+ // background-color: #1E3D59;
+ border: 1px solid #1E3D59;
+ padding:5px 10px;
+ color:#1E3D59;
+ font-weight: 600;
+ &:hover
+ {
+  background-color: #1E3D5911;
+ }
+}
+
+.buttonWithoutBorder
+{
+ width: 120px;
+ background-color: #1E3D59;
+ padding:5px 10px;
+ color:#ffffff;
+ font-weight: 600;
+ &:hover
+ {
+  background-color: #1E3D65;
+ }
+}
