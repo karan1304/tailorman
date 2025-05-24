@@ -32,7 +32,7 @@ import SCI from "./sci.png"
 import SCT from "./sct.png"
 import SCY from "./scy.png"
 import ToggleOff from "./Cancel.png";
-import ToggleOn from "./toggleon.png";
+import ToggleOn from "./toggleOn.png";
 import AboutMainImage from './about-main-image.png';
 import CEO from './ceo.jpg'
 import AboutTailorman from './about-tailorman.jpg';
